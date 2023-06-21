@@ -7,44 +7,52 @@
 </head>
 <body>
     <h1>form tags, min 1:34:00</h1>
-    <form action="">
-        <label for="fname">First name: </label>
-        <input type="text" id="fname">&nbsp;
-        <label for="lname">Last name: </label>
-        <input type="text" id="lname">&nbsp;
-        <br>
-        <label for="email">Your email: </label>
-        <input type="email" id="email">&nbsp;
-        <label for="file">Enter file:</label>
-        <input type="file" id="file">&nbsp;
-        <br>
-        <label for="password">Enter password:</label>
-        <input type="password" name="" id="password">&nbsp;
-        <label for="color">Select Color:</label>
-        <input type="color" name="" id="color">&nbsp;
-        <label for="date">Select date: </label>
-        <input type="date" name="" id="date"> &nbsp;
+    <form action="" method="get" class="form-example">
         
+        <div class="form-example">
+            <label for="fname">First name: </label>
+            <input type="text" id="fname" required>&nbsp;
+            <label for="lname">Last name: </label>
+            <input type="text" id="lname" required>&nbsp;
+            <br>
+            <label for="email">Your email: </label>
+            <input type="email" id="email" required>&nbsp;
+            <label for="file">Enter file:</label>
+            <input type="file" id="file" required>&nbsp;
+            <br>
+            <label for="password">Enter password:</label>
+            <input type="password" name="" id="password" required>&nbsp;
+            <label for="color">Select Color:</label>
+            <input type="color" name="" id="color" required>&nbsp;
+            <label for="date">Select date: </label>
+            <input type="date" name="" id="date" required> &nbsp;
+        </div>
         <br>
-        <!-- Radio botton -->
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male">
-        <label for="ffemale">Female</label>
-        <input type="radio" name="gender" id="female">
-        <label for="other">Others</label>
-        <input type="radio" name="gender" id="other">
-        <br>
-        <label for="temp">Select your confortable temperture:</label><br>
-        <input type="range" name="" id="temp" min="0" max="100" step="5" list="markers">
-        <datalist id="markers">
-            <option value="0"></option>
-            <option value="25"></option>
-            <option value="50"></option>
-            <option value="75"></option>
-            <option value="100"></option>
-        </datalist>
-        <br>
-        <button>Save</button>
+        <div class="form-example">
+                <!-- Radio botton -->
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" required>
+            <label for="ffemale">Female</label>
+            <input type="radio" name="gender" id="female" required>
+            <label for="other">Others</label>
+            <input type="radio" name="gender" id="other" required>
+            <br>  
+            <!-- range bar    -->
+            <label for="temp">Select your confortable temperture:</label><br>
+            <input type="range" name="" id="temp" min="0" max="100" step="5" list="markers">
+            <datalist id="markers">
+                <option value="0"></option>
+                <option value="25"></option>
+                <option value="50"></option>
+                <option value="75"></option>
+                <option value="100"></option>
+            </datalist>
+            <br>
+            <button>Save</button>
+            <input type="submit" value="Send">
+        </div>
+    
+        
 
 
         
